@@ -7,9 +7,10 @@ request.get('https://sytantris.github.io/http-examples/future.jpg')             
          throw err;
        })
        .on('response', function (response) {                           // Note 3
-         console.log('Response Status Code: ', response.statusCode);
+         console.log('Response Status Message: ', response.statusMessage, response.headers['content-type']);
+         //status message is OK  = statatus code is 200
+         console.log('Download complete.');
        })
-       .pipe(fs.createWriteStream('./downloaded.html'));
+       .pipe(fs.createWriteStream('./future.jpg'));
 
 console.log('Downloading image...');
-console.log('Download complete.');

@@ -1,0 +1,14 @@
+{
+  "name": "requestexercise",
+  "version": "1.0.0",
+  "description": "scripting http requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aileen pang",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
